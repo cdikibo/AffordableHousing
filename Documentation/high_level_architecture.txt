@@ -1,0 +1,31 @@
+High Level Architecture
+========================
+
+UI (various js)
+------------------
+
+[Owner Application App] [Section 8 Application App] [Housing Browser App] [Issue Tracker App]
+                  \\                      ||          ||                   //
+                   \\                     ||          ||                  //
+App Layer (ruby, python)                  ||          ||                 //
+------------------   \\                   ||          ||                //
+                      \\                  ||          ||               //
+                     [             Data Access Layer                     ]
+                                          ||
+Database (postGRE sql)                    ||
+------------------                        ||
+                                          ||
+                                      [Database]
+
+
+
+
+Owner Application & Section 8 Apps:
+- simple REST apps, mostly web forms
+
+Housing Browser App:
+- think AirBnB mixed with Zillow
+
+Issue Tracker App:
+- Allows issues to be filed and documented
+- Similar to JIRA or other process workflow apps
