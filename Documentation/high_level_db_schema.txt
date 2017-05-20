@@ -50,6 +50,7 @@ user_id
 Section 8 Application:
 ---------
 application_id
+tenant_id
 ...app details...
 ---------
 
@@ -57,6 +58,7 @@ application_id
 Owner Application:
 ---------
 application_id
+owner_id
 ...app details...
 ---------
 
@@ -82,6 +84,7 @@ Rental History:
 ---------
 rental_history_id
 property_id
+tenant_id
 start_date
 end_date
 ---------
@@ -90,9 +93,10 @@ end_date
 Issue:
 ---------
 issue_id
+rental_history_id
 issue_type
 entry_date
-tenant_id
+tenant_id   //should this be reporter_id and other_party_id
 owner_id
 advisor_id
 ---------
