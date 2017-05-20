@@ -1,0 +1,106 @@
+High Level DB Schema
+============================
+
+
+         [         user         ]
+          /          |         \
+    {tenant}      {owner}    {advisor}
+     |   |           | |         |
+[section_8_appl] [owner_appl]    |
+     |        \    /   |   |     |
+     | [application_status]|     |
+     |                 |   |     |
+     \            [property ]    |
+      \               /          /
+     [   rental_history]        /
+                 |             /
+        [      issue             ]
+                 |
+           [issue_detail]
+
+
+User:
+---------
+user_id
+...contact details...
+---------
+
+
+Tenant:
+---------
+tenant_id
+user_id
+---------
+
+
+Owner:
+---------
+owner_id
+user_id
+---------
+
+
+Advisor:
+---------
+advisor_id
+user_id
+---------
+
+
+Section 8 Application:
+---------
+application_id
+...app details...
+---------
+
+
+Owner Application:
+---------
+application_id
+...app details...
+---------
+
+
+Application Status:
+---------
+application_status_id
+application_id
+date
+status
+---------
+
+
+Property:
+---------
+property_id
+owner_id
+...property details...
+---------
+
+
+Rental History:
+---------
+rental_history_id
+property_id
+start_date
+end_date
+---------
+
+
+Issue:
+---------
+issue_id
+issue_type
+entry_date
+tenant_id
+owner_id
+advisor_id
+---------
+
+
+Issue Detail:
+---------
+issue_detail_id
+issue_id
+...pictures, text data...
+---------

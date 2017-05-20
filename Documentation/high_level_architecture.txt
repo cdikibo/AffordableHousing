@@ -1,0 +1,18 @@
+High Level Architecture
+========================
+
+UI (various js)
+------------------
+
+[Owner Application App] [Section 8 Application App] [Housing Browser App] [Issue Tracker App]
+                  \\                      ||          ||                   //
+                   \\                     ||          ||                  //
+App Layer (ruby, python)                  ||          ||                 //
+------------------   \\                   ||          ||                //
+                      \\                  ||          ||               //
+                     [             Data Access Layer                     ]
+                                          ||
+Database (postGRE sql)                    ||
+------------------                        ||
+                                          ||
+                                      [Database]
